@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="501.0" prefWidth="408.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task6.HelloController">
+    <children>
+        <Canvas fx:id="myCanvas" height="279.0" onDragDetected="#OnMouseClickCanvas" onMouseClicked="#OnMouseClickCanvas" width="399.0" />
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+              <ListView fx:id="listViewShape" editable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="279.0" prefWidth="179.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ListView>
+         </children>
+      </Pane>
+      <SplitPane dividerPositions="0.26108374384236455, 0.4827586206896552, 0.5" prefHeight="200.0" prefWidth="200.0">
+         <items>
+            <Label fx:id="Statusbar" prefHeight="17.0" prefWidth="288.0" text="Label" />
+              <Label text="Выберите цвет фигуры:" />
+            <ColorPicker fx:id="colorPickerShape" prefHeight="25.0" prefWidth="127.0" />
+              <Button fx:id="btnClear" mnemonicParsing="false" onAction="#OnBtnClear" prefHeight="37.0" prefWidth="125.0" text="ОЧИСТИТЬ" />
+         </items>
+      </SplitPane>
+
+    </children>
+</VBox>
